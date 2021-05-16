@@ -11,6 +11,8 @@ Plug 'preservim/nerdcommenter'
 " statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'hoob3rt/lualine.nvim'
+" Plug 'kyazdani42/nvim-web-devicons'
 
 " file tree
 Plug 'preservim/nerdtree'
