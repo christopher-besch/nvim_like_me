@@ -16,7 +16,14 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 
 " git
-Plug 'mhinz/vim-signify'
+" why the fuck does nothing work???
+
+" sessions
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'rmagatti/auto-session'
+Plug 'rmagatti/session-lens'
 
 call plug#end()
 
@@ -40,10 +47,11 @@ let mapleader=','
 
 colorscheme lunar
 
+setlocal spell
+
 " plugin configs
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/code/coc.vim
 source $HOME/.config/nvim/code/nerdcommenter.vim
 source $HOME/.config/nvim/files/nerdtree.vim
-source $HOME/.config/nvim/git/signify.vim
 
