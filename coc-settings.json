@@ -1,24 +1,10 @@
 {
-    "languageserver": {
-        "clangd": {
-            "command": "clangd",
-            "extraArgs": ["-style=file"],
-            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-            "filetypes": [
-                "h",
-                "hpp",
-                "inl",
-                "c",
-                "cc",
-                "cpp",
-                "c++",
-                "objc",
-                "objcpp"
-            ]
-        }
-    },
-    "coc.preferences.formatOnSaveFiletypes": ["css", "md", "h", "cpp", "json"],
-    "ccls.preferences.tabWidth": 4,
-    "prettier.tabWidth": 4,
-    "ccls.tabWidth": 4
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "h",
+        "cpp",
+        "json"
+    ],
+    "prettier.tabWidth": 4
 }
