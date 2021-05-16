@@ -1,7 +1,9 @@
 {
     "languageserver": {
-        "ccls": {
-            "command": "ccls",
+        "clangd": {
+            "command": "clangd",
+            "extraArgs": ["-style=file"],
+            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
             "filetypes": [
                 "h",
                 "hpp",
@@ -12,15 +14,11 @@
                 "c++",
                 "objc",
                 "objcpp"
-            ],
-            "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                }
-            }
+            ]
         }
     },
     "coc.preferences.formatOnSaveFiletypes": ["css", "md", "h", "cpp", "json"],
-    "prettier.tabWidth": 4
+    "ccls.preferences.tabWidth": 4,
+    "prettier.tabWidth": 4,
+    "ccls.tabWidth": 4
 }
