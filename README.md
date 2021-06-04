@@ -8,6 +8,12 @@
 
 -   [https://github.com/neoclide/coc.nvim/wiki/Language-servers#ccobjective-c](https://github.com/neoclide/coc.nvim/wiki/Language-servers#ccobjective-c)
 
+## Installation
+
+-   overwrite .config/nvim
+-   `PackerSync`
+-   `LspInstall <language>`
+
 ### Coc
 
 -   `:CocInstall coc-prettier`
@@ -50,3 +56,8 @@
 -   zt align top
 -   zz align center
 -   zb align bottom
+
+-   za toggle fold
+
+### Commands
+- `:%s/find/replace/g`
