@@ -22,17 +22,17 @@ function C.gitsigns()
     require 'gitsigns'.setup()
 end
 
-function C.colorizer()
-    require 'colorizer'.setup({'*'}, {
-        RGB            = true,
-        RRGGBB         = true,
-        names          = true,
-        RRGGBBAA       = true,
-        rgb_fn         = true,
-        hsl_fn         = true,
-        mode           = 'background'
-    })
-end
+-- function C.colorizer()
+--     require 'colorizer'.setup({'*'}, {
+--         RGB            = true,
+--         RRGGBB         = true,
+--         names          = true,
+--         RRGGBBAA       = true,
+--         rgb_fn         = true,
+--         hsl_fn         = true,
+--         mode           = 'background'
+--     })
+-- end
 
 function C.feline()
     -- inits

@@ -14,13 +14,27 @@ function K.markdown_preview()
 end
 
 function K.misc()
-    map(N,    '<leader>h',        ':set invhlsearch<CR>')                     -- toggle search higlight
-    map(N,    '<leader>s',        ':set invspell<CR>')                        -- toggle spell check
-    map(N,    '<leader>t',        ':ThemeCycle<CR>')                          -- cycle between installed themes
-    map(N,    '<F2>',             'a<C-R>=strftime("%c")<CR><Esc>')           -- insert date
-    map(N,    'Y',                'y$')                                       -- making Y act like C and D
-    map(N,    'J',                'J$')                                       -- go to end after a join
-    map(N,    'S',                'T hr<CR>k$')                               -- split (opposite of J)
+    map(N, '<leader>h',         ':set invhlsearch<CR>')                     -- toggle search higlight
+    map(N, '<leader>s',         ':set invspell<CR>')                        -- toggle spell check
+    -- map(N, '<leader>t',         ':ThemeCycle<CR>')                          -- cycle between installed themes
+    map(N, '<F2>',              'a<C-R>=strftime("%c")<CR><Esc>')           -- insert date
+    map(N, 'Y',                 'y$')                                       -- making Y act like C and D
+    map(N, 'J',                 'J$')                                       -- go to end after a join
+    map(N, 'S',                 'T hr<CR>k$')                               -- split (opposite of J)
+end
+
+function K.telescope()
+    map(N, '<leader>tc',        ':Telescope command_history<CR>')
+    map(N, '<leader>tf',        ':Telescope find_files<CR>')
+end
+ 
+function K.shifting()
+    map(N,    '<A-j>',          ':m .+1<CR>==')
+    map(N,    '<A-k>',          ':m .-2<CR>==')
+    map(I,    '<A-j>',          '<Esc>:m .+1<CR>==gi')
+    map(I,    '<A-k>',          '<Esc>:m .-2<CR>==gi')
+    map(V,    '<A-j>',          ":m '>+1<CR>gv=gv")
+    map(V,    '<A-k>',          ":m '<-2<CR>gv=gv")
 end
 
 for _, keymap in pairs(Keymaps) do K[keymap]() end
