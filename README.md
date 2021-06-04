@@ -1,5 +1,8 @@
 # Neovim Like Me
 
+Thank you very much @RaafatTurki for teaching me and letting me copy large amounts of his code!
+You can find his config [here](https://github.com/RaafatTurki/neovim-me), check it out and star it!
+
 ## Resources
 
 - [https://github.com/neovim/neovim/releases](https://github.com/neovim/neovim/releases)

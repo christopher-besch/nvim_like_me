@@ -13,6 +13,7 @@ Plugins = {
     {'karb94/neoscroll.nvim'},
     {'norcalli/nvim-colorizer.lua'},            -- render bug (fixable with buffer reload)
     {'famiu/feline.nvim',                       requires = 'kyazdani42/nvim-web-devicons'},
+    {'nvim-telescope/telescope.nvim',           requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}}
 }
 Keymaps = {
     'nvim_comment',
