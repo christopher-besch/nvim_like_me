@@ -75,11 +75,10 @@ function get_curr_mode()
     -- r?     = "A |:confirm| query of some sort",
     -- !      = "Shell or external command is executing",
 
-    local modes = { "n", "no", "v", "V", "^V", "s", "S", "^S", "i", "c", "t" }
+    local modes = { 110, "no", 118, 86, 22, "s", "S", "^S", 105, 99, "t" }
     local modes_names = { "Normal", "Pending Op", "Visual", "V-Line", "V-Block", "Select", "S-Line", "S-Block", "Insert", "Command", "Terminal" }
 
-    local raw_mode = vim.fn.mode()
-    local selected_mode = "Unknown"
+    local raw_mode = vim.fn.mode():byte()
 
     for i, mode in pairs(modes) do
         if (mode == raw_mode) then
@@ -88,6 +87,5 @@ function get_curr_mode()
         end
     end
 
-    -- return raw_mode
-    return selected_mode
+    return "Unknown"
 end
