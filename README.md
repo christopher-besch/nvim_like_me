@@ -34,9 +34,19 @@
 -   vif - select function
 -   vaf - select function with braces
 -   <leader>c<space> - (un)comment
--   <leader>t - filetree
--   m - filtree filesystem menu
+-   <leader>t - filletree
+-   m - filltree filesystem menu
 
 -   :qa - close nvim
 -   :mksession! .ses.vim
 -   nvim -S .ses.vim
+
+-   <C-u> half up
+-   <C-d> half down
+-   <C-b> full up
+-   <C-f> full down
+-   <C-y> four lines up
+-   <C-e> four lines down
+-   zt align top
+-   zz align center
+-   zb align bottom

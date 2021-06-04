@@ -1,4 +1,5 @@
 " I hate vim!
+let mapleader=','
 
 """""""""""
 " plugins "
@@ -13,8 +14,12 @@ Plug 'preservim/nerdcommenter'
 " statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 " Plug 'hoob3rt/lualine.nvim'
 " Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'famiu/feline.nvim'
+
 
 " file tree
 Plug 'preservim/nerdtree'
@@ -30,17 +35,14 @@ Plug 'folke/tokyonight.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-" sessions
-" this stuff doesn't seem to work reliably.
-" Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'nvim-telescope/telescope.nvim'
-" Plug 'rmagatti/auto-session'
-" Plug 'rmagatti/session-lens'
+" scrolling
+Plug 'karb94/neoscroll.nvim'
+
 call plug#end()
 
 " plugin configs
-source $HOME/.config/nvim/themes/airline.vim
+" source $HOME/.config/nvim/statusline/airline.vim
+source $HOME/.config/nvim/statusline/feline.vim
 source $HOME/.config/nvim/code/coc.vim
 source $HOME/.config/nvim/code/nerdcommenter.vim
 source $HOME/.config/nvim/files/nerdtree.vim
@@ -48,6 +50,7 @@ source $HOME/.config/nvim/git/gitsigns.vim
 source $HOME/.config/nvim/color/material.vim
 source $HOME/.config/nvim/color/tokyonight.vim
 source $HOME/.config/nvim/color/treesitter.vim
+source $HOME/.config/nvim/scroll/neoscroll.vim
 
 """"""""""""""""""""
 " general settings "
@@ -69,7 +72,6 @@ set signcolumn=yes          " allow git signs
 filetype plugin indent on   " allows auto-indenting depending on file type
 syntax on                   " syntax highlighting
 set number relativenumber   " turn hybrid line numbers on
-let mapleader=','
 " setlocal spell
 
 " colorscheme tokyonight
