@@ -18,6 +18,7 @@ Keymaps = {
     'nvim_comment',
     'packer',
     'markdown_preview',
+    'misc',
 }
 Configs = {
     'nvim_comment',
