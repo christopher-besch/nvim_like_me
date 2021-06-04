@@ -64,6 +64,9 @@ You can find his config [here](https://github.com/RaafatTurki/neovim-me), check 
 
 - za toggle fold
 
+- <C-t> open telescope file in new tab
+- <C-v> open telescope file in vsplit
+
 ### Commands
 
 - `:%s/find/replace/g`
