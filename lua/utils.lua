@@ -20,7 +20,7 @@ function hi(prop) vim.cmd('hi '..prop) end
 -- :cnoreabbrev
 function abbrev(arg) vim.cmd('cnoreabbrev '..arg) end
 
--- :autocomd
+-- :autocmd
 function autocmd(cmd) vim.cmd('autocmd '..cmd) end
 
 -- gets a color value from (group, id)

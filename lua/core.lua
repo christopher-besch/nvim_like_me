@@ -42,4 +42,5 @@ Themes = {
 }
 Miscs = {
     'format_on_save',
+    'altered_comments',
 }

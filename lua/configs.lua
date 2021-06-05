@@ -5,7 +5,6 @@ function C.nvim_comment()
         create_mappings = false,
         marker_padding = true,
     }
-    -- vim.api.nvim_buf_set_option(0, "commentstring", "# %s")
 end
 
 function C.neoscroll()
@@ -21,18 +20,6 @@ end
 function C.gitsigns()
     require 'gitsigns'.setup()
 end
-
--- function C.colorizer()
---     require 'colorizer'.setup({'*'}, {
---         RGB            = true,
---         RRGGBB         = true,
---         names          = true,
---         RRGGBBAA       = true,
---         rgb_fn         = true,
---         hsl_fn         = true,
---         mode           = 'background'
---     })
--- end
 
 function C.feline()
     -- inits
