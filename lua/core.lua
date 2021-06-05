@@ -22,7 +22,10 @@ Keymaps = {
     'misc',
     'telescope',
     'shifting',
+    'autocomplete',
+    'lsp',
 }
+
 Configs = {
     'nvim_comment',
     'neoscroll',
