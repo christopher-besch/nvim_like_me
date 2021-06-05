@@ -22,7 +22,7 @@ Keymaps = {
     'misc',
     'telescope',
     'shifting',
-    'autocomplete',
+    -- 'autocomplete',
     'lsp',
 }
 
