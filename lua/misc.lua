@@ -17,8 +17,8 @@ end
 
 -- set sane comments for c++
 function M.altered_comments()
-    autocmd 'BufEnter *.cpp,*.h :lua vim.api.nvim_buf_set_option(0, "commentstring", "// %s")'
-    autocmd 'BufFilePost *.cpp,*.h :lua vim.api.nvim_buf_set_option(0, "commentstring", "// %s")'
+    autocmd 'BufEnter *.cpp,*.h,*.hpp :lua vim.api.nvim_buf_set_option(0, "commentstring", "// %s")'
+    autocmd 'BufFilePost *.cpp,*.h,*.hpp :lua vim.api.nvim_buf_set_option(0, "commentstring", "// %s")'
 end
 
 for _, misc in pairs(Miscs) do M[misc]() end

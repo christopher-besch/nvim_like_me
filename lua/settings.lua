@@ -11,7 +11,7 @@ set 'cursorline'
 set 'noshowmode'
 set 'nospell'
 set 'spelllang=en_us'
-set 'nowrap'
+-- set 'nowrap'
 -- set 'hidden'                                 -- Even the Guru doesn't know what this does
 set 'termguicolors'                             -- Full Color Support
 set 'splitbelow'                                -- Horizontal splits will automatically be below

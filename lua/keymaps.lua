@@ -25,7 +25,7 @@ end
 
 function K.telescope()
     map(N, '<leader>tc',        ':Telescope command_history<CR>')
-    map(N, '<leader>tf',        ':Telescope find_files<CR>')
+    map(N, '<leader>f',        ':Telescope find_files<CR>')
 end
  
 function K.shifting()
@@ -58,8 +58,49 @@ function K.lsp()
     map(N, '[d',                '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
     map(N, ']d',                '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
     map(N, '<leader>q',         '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>')
-    map(N, "<leader>f",         "<cmd>lua vim.lsp.buf.formatting()<CR>")
+    -- map(N, "<leader>f",         "<cmd>lua vim.lsp.buf.formatting()<CR>")
 end
 
+-- doesn't work
+function K.disable_mouse()
+    map(N, '<ScrollWheelUp>',      '<nop>')
+    map(N, '<S-ScrollWheelUp>',    '<nop>')
+    map(N, '<C-ScrollWheelUp>',    '<nop>')
+    map(N, '<ScrollWheelDown>',    '<nop>')
+    map(N, '<S-ScrollWheelDown>',  '<nop>')
+    map(N, '<C-ScrollWheelDown>',  '<nop>')
+    map(N, '<ScrollWheelLeft>',    '<nop>')
+    map(N, '<S-ScrollWheelLeft>',  '<nop>')
+    map(N, '<C-ScrollWheelLeft>',  '<nop>')
+    map(N, '<ScrollWheelRight>',   '<nop>')
+    map(N, '<S-ScrollWheelRight>', '<nop>')
+    map(N, '<C-ScrollWheelRight>', '<nop>')
+
+    map(I, '<ScrollWheelUp>',      '<nop>')
+    map(I, '<S-ScrollWheelUp>',    '<nop>')
+    map(I, '<C-ScrollWheelUp>',    '<nop>')
+    map(I, '<ScrollWheelDown>',    '<nop>')
+    map(I, '<S-ScrollWheelDown>',  '<nop>')
+    map(I, '<C-ScrollWheelDown>',  '<nop>')
+    map(I, '<ScrollWheelLeft>',    '<nop>')
+    map(I, '<S-ScrollWheelLeft>',  '<nop>')
+    map(I, '<C-ScrollWheelLeft>',  '<nop>')
+    map(I, '<ScrollWheelRight>',   '<nop>')
+    map(I, '<S-ScrollWheelRight>', '<nop>')
+    map(I, '<C-ScrollWheelRight>', '<nop>')
+
+    map(V, '<ScrollWheelUp>',      '<nop>')
+    map(V, '<S-ScrollWheelUp>',    '<nop>')
+    map(V, '<C-ScrollWheelUp>',    '<nop>')
+    map(V, '<ScrollWheelDown>',    '<nop>')
+    map(V, '<S-ScrollWheelDown>',  '<nop>')
+    map(V, '<C-ScrollWheelDown>',  '<nop>')
+    map(V, '<ScrollWheelLeft>',    '<nop>')
+    map(V, '<S-ScrollWheelLeft>',  '<nop>')
+    map(V, '<C-ScrollWheelLeft>',  '<nop>')
+    map(V, '<ScrollWheelRight>',   '<nop>')
+    map(V, '<S-ScrollWheelRight>', '<nop>')
+    map(V, '<C-ScrollWheelRight>', '<nop>')
+end
 
 for _, keymap in pairs(Keymaps) do K[keymap]() end

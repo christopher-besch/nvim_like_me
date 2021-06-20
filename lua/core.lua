@@ -1,7 +1,7 @@
 Plugins = {
     {'wbthomason/packer.nvim'},
-	{'terrortylor/nvim-comment'},
-	{'marko-cerovac/material.nvim'},
+    {'terrortylor/nvim-comment'},
+    {'marko-cerovac/material.nvim'},
     {'neovim/nvim-lspconfig'},
     {'hrsh7th/nvim-compe'},
     {'kabouzeid/nvim-lspinstall'},
@@ -24,6 +24,7 @@ Keymaps = {
     'shifting',
     -- 'autocomplete',
     'lsp',
+    'disable_mouse',
 }
 
 Configs = {
