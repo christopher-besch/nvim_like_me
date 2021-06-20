@@ -19,22 +19,7 @@ You can find his config [here](https://github.com/RaafatTurki/neovim-me), check 
 - `pip install pynvim`
 - install formatter form [here](https://github.com/sbdchd/neoformat)
 
-### Coc
-
-- `:CocInstall coc-prettier`
-- `:CocInstall coc-tsserver`
-- `:CocInstall coc-clangd`
-
 ### shortcuts
-
-- Tab for completion
-- <cr> to choose first completion item
-- gd to jump to definition
-- gr for references
-- gy for type definition
-- K for documentation
-- <leader>rn for renaming
-- if, ic for func/class selection in visual mode
 
 - <space>a to list diagnostics
 - [g and ]g to go prev/next in diagnostics
