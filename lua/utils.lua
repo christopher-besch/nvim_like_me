@@ -57,6 +57,11 @@ function augroup(autocmd, name)
     vim.api.nvim_exec('augroup '..name..' \nautocmd!\n'..autocmd..'\naugroup end', false)
 end
 
+-- replace terminal codes in a vim map string
+function term_codes(str)
+	return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
+
 -- getters (WIP)
 function get_curr_mode()
     -- unmapped modes

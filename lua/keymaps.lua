@@ -1,12 +1,12 @@
 local K = {}
 
 function K.nvim_comment()
-	map(N, '<leader>c',			':CommentToggle<CR>')
-	map(V, '<leader>c',			':CommentToggle<CR>')
+    map(N, '<leader>c',         ':CommentToggle<CR>')
+    map(V, '<leader>c',         ':CommentToggle<CR>')
 end
 
 function K.packer()
-	map(N, '<leader>p',			':PackerSync<CR>')
+    map(N, '<leader>p',         ':PackerSync<CR>')
 end
 
 function K.markdown_preview()
@@ -37,9 +37,9 @@ function K.shifting()
     map(V, '<A-k>',             ":m '<-2<CR>gv=gv")
 end
 
--- function K.autocomplete()
---     map(I, '{',                 '{}<left>')
--- end
+function K.autocomplete()
+    vim.api.nvim_set_keymap('i', '<cr>', 'compe#confirm("<cr>")', { expr = true })
+end
 
 function K.lsp()
     map(N, 'gD',                '<Cmd>lua vim.lsp.buf.declaration()<CR>')
@@ -59,6 +59,27 @@ function K.lsp()
     map(N, ']d',                '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
     map(N, '<leader>q',         '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>')
     -- map(N, "<leader>f",         "<cmd>lua vim.lsp.buf.formatting()<CR>")
+end
+
+function K.tab_complete()
+    _G.tab_complete = function(dir)
+        if vim.fn.pumvisible() == 1 then
+            if (dir == "F") then
+                return term_codes '<C-n>'
+            elseif (dir == "B") then
+                return term_codes '<C-p>'
+            end
+        else
+            if (dir == "F") then
+                return term_codes '<Tab>'
+            elseif (dir == "B") then
+                return term_codes '<S-Tab>'
+            end
+        end
+    end
+
+    map(I, "<Tab>", "v:lua.tab_complete('F')", {expr = true})
+    map(I, "<S-Tab>", "v:lua.tab_complete('B')", {expr = true})
 end
 
 -- doesn't work

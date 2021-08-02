@@ -21,6 +21,7 @@ You can find his config [here](https://github.com/RaafatTurki/neovim-me), check 
 
 ### shortcuts
 
+- ":retab"
 - <space>a to list diagnostics
 - [g and ]g to go prev/next in diagnostics
 

@@ -22,8 +22,9 @@ Keymaps = {
     'misc',
     'telescope',
     'shifting',
-    -- 'autocomplete',
+    'autocomplete',
     'lsp',
+    'tab_complete',
     'disable_mouse',
 }
 
@@ -33,11 +34,12 @@ Configs = {
     'gitsigns',
     -- 'colorizer',
     'feline',
+    -- 'compe',
 }
 Theme_curr = 1
 Themes = {
 	{'material', 'darker'},
-	{'material', 'deepocean'},
+	{'material', 'deep ocean'},
 	{'material', 'palenight'},
 	{'material', 'oceanic'},
 }
