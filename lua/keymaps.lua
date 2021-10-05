@@ -37,6 +37,7 @@ function K.shifting()
     map(V, '<A-k>',             ":m '<-2<CR>gv=gv")
 end
 
+-- doesn't work
 function K.autocomplete()
     vim.api.nvim_set_keymap('i', '<cr>', 'compe#confirm("<cr>")', { expr = true })
 end
