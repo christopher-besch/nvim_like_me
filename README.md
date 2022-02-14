@@ -1,5 +1,9 @@
 # Neovim Like Me
 
+I'm no longer using Neovim directly.
+Instead I use [LunarVim](https://www.lunarvim.org).
+You can find my current config under [christopher-besch/configs](https://github.com/christopher-besch/configs).
+
 Thank you very much @RaafatTurki for teaching me and letting me copy large amounts of his code!
 You can find his config [here](https://github.com/RaafatTurki/neovim-me), check it out and star it!
 
